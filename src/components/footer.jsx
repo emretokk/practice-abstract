@@ -2,7 +2,7 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-black text-white flex justify-around py-20">
+    <footer className="bg-black text-white flex flex-col sm:flex-row justify-around py-20">
       <div className="flex flex-col">
         <h1 className="text-3xl mb-4">Abstract</h1>
         <a href="#">Start Trial</a>

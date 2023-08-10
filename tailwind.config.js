@@ -6,6 +6,7 @@ export default {
       colors: {
         blue: "#4C5FD5",
         purple: "#dadbf1",
+        gray: "#191a1b",
       },
     },
   },

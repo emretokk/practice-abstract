@@ -3,9 +3,9 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 function Item(props) {
   return (
-    <div className="h-[240px] w-[600px] flex mb-16">
+    <div className="h-[240px] w-[200px] md:w-[350px] xl:w-[600px] flex mb-80 sm:mb-16">
       <img src={props.img} className=" w-[88px] h-[88px]"></img>
-      <div className=" ml-8 pr-4 flex flex-col ">
+      <div className="sm:ml-8 pr-4 flex flex-col ">
         <h1 className=" font-bold text-2xl mb-4">{props.h}</h1>
         <p className=" text-2xl mb-4">{props.text}</p>
         <a className="text-blue" href="#">
@@ -20,9 +20,11 @@ export default function Content() {
   return (
     <main>
       <div className="bg-purple px-[30px] pt-[80px] pb-[115px] flex items-center justify-center">
-        <div className="w-fit h-fit flex flex-col items-center">
-          <span className="text-[76px]">How can we help?</span>
-          <form className="w-[720px] h-16 relative group">
+        <div className="w-full h-fit flex flex-col items-center">
+          <span className="text-[25px] sm:text-[40px] md:text-[76px] whitespace-nowrap">
+            How can we help?
+          </span>
+          <form className="w-11/12 md:w-[720px] h-16 relative group">
             <input
               className="w-full h-full border border-black group-hover:border-blue group-focus:border-blue rounded px-4 text-xl transition-colors shadow-xl"
               type="text"
@@ -38,7 +40,7 @@ export default function Content() {
       <div className="w-full h-fit flex items-center justify-center">
         <div
           id="items-container"
-          className="w-11/12 h-fit flex flex-wrap justify-center mt-56"
+          className="w-full h-fit flex flex-wrap justify-center mt-56"
         >
           <Item
             img="src/assets/a1.png"
